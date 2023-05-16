@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoopingViewPager">
+        <attr name="isInfinite" format="boolean" />
+        <attr name="autoScroll" format="boolean" />
+        <attr name="wrap_content" format="boolean" />
+        <attr name="scrollInterval" format="integer"/>
+        <attr name="viewpagerAspectRatio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="YouTubeOverlay">
+        <attr name="yt_playerView" format="reference" />
+        <attr name="yt_seekSeconds" format="integer" />
+        <attr name="yt_animationDuration" format="integer" />
+        <attr name="yt_iconAnimationDuration" format="integer" />
+        <attr name="yt_arcSize" format="dimension" />
+        <attr name="yt_tapCircleColor" format="color" />
+        <attr name="yt_backgroundCircleColor" format="color" />
+
+        <attr name="yt_textAppearance" format="reference" />
+        <attr name="yt_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DoubleTapPlayerView">
+        <attr name="dtpv_controller" format="reference" />
+    </declare-styleable>
+
+    <item name="exo_controller" type="id"/>
+    <item name="exo_error_message" type="id"/>
+    <integer name="exo_media_button_opacity_percentage_disabled">33</integer>
+    <integer name="exo_media_button_opacity_percentage_enabled">100</integer>
+</resources>

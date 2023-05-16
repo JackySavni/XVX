@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml:1:1-13
+INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml:1:1-13
+INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml:1:1-13
+	package
+		INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+		ADDED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml:1:1-13
+		INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml:1:1-13
+uses-sdk
+INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+		ADDED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+		INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+		ADDED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
+		INJECTED from G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml

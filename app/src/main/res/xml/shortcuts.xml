@@ -1,0 +1,12 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="videos"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_videos">
+        <intent
+            android:action="com.brouken.player.com.video.player.videoplayer.xvxvideoplayer.vid.action.SHORTCUT_VIDEOS"
+            android:targetPackage="com.video.player.videoplayer.xvxvideoplayer.vid"
+            android:targetClass="com.video.player.videoplayer.xvxvideoplayer.vid.VP_Player" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vp_galley_bg_menu"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/vp_galley_shape_menu_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/vp_imgBrushPreview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/vp_galley_shape_circle" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/vp_sliderBrushSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:stepSize="5"
+            android:value="20"
+            android:valueFrom="10"
+            android:valueTo="100"
+            app:haloRadius="0dp"
+            app:labelBehavior="floating"
+            app:thumbColor="@color/design_default_color_primary"
+            app:thumbElevation="0dp"
+            app:thumbRadius="6dp"
+            app:tickVisible="false"
+            app:trackColorActive="@color/design_default_color_primary"
+            app:trackColorInactive="@android:color/white"
+            app:trackHeight="2dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/vp_sliderOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:stepSize="5"
+            android:value="100"
+            android:valueFrom="5"
+            android:valueTo="100"
+            app:haloRadius="0dp"
+            app:labelBehavior="floating"
+            app:thumbColor="@color/design_default_color_primary"
+            app:thumbElevation="0dp"
+            app:thumbRadius="6dp"
+            app:tickVisible="false"
+            app:trackColorActive="@color/design_default_color_primary"
+            app:trackColorInactive="@android:color/white"
+            app:trackHeight="2dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vp_recyclerViewColors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
