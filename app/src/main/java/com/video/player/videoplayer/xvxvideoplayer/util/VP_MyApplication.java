@@ -1,5 +1,6 @@
 package com.video.player.videoplayer.xvxvideoplayer.util;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
 import android.content.SharedPreferences;
@@ -29,6 +30,7 @@ public class VP_MyApplication extends Application {
     public ArrayList<VP_GalleryPhoto> vp_deleteList = new ArrayList<>();
     public int vp_deleteAlbActPhotoPos = -1;
     public VP_GalleryAlbum VPGalleryAlbum = new VP_GalleryAlbum("", 0, 0L, vp_arrayList);
+    @SuppressLint("StaticFieldLeak")
     public static VP_AppOpenManager VPAppOpenManager;
 
     public static synchronized VP_MyApplication getInstance() {

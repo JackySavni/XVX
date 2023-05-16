@@ -119,7 +119,7 @@ public class VP_FolderAdapter extends RecyclerView.Adapter<VP_FolderAdapter.View
         } else {
             NativeHolder nativeHolder = (NativeHolder) viewHolder;
 
-            if (vp_gEnabled(vp_activity) && vp_1FBEnable(vp_activity)){
+            if (vp_gEnabled(vp_activity) && vp_1FBEnable(vp_activity)) {
                 AdLoader.Builder builder = new AdLoader.Builder(vp_activity, vp_GNative1(vp_activity));
                 builder.forNativeAd(nativeAd -> {
                     if (vp_mNativeAd != null) {
@@ -140,8 +140,8 @@ public class VP_FolderAdapter extends RecyclerView.Adapter<VP_FolderAdapter.View
                     public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                         nativeHolder.vp_adText.setVisibility(View.GONE);
 
-                        if (vp_1FBEnable(vp_activity)){
-                            NativeBannerAd nativeBannerAd = new NativeBannerAd(vp_activity,vp_FBNativeBanner1(vp_activity));
+                        if (vp_1FBEnable(vp_activity)) {
+                            NativeBannerAd nativeBannerAd = new NativeBannerAd(vp_activity, vp_FBNativeBanner1(vp_activity));
                             NativeAdListener nativeAdListener = new NativeAdListener() {
                                 @Override
                                 public void onMediaDownloaded(Ad ad) {
@@ -151,7 +151,7 @@ public class VP_FolderAdapter extends RecyclerView.Adapter<VP_FolderAdapter.View
                                 public void onError(Ad ad, AdError adError) {
                                     nativeHolder.vp_adText.setVisibility(View.GONE);
                                     if (vp_isValidContext(vp_activity)) {
-                                        loadQurNative(vp_activity,nativeHolder.vp_mAdContainer);
+                                        loadQurNative(vp_activity, nativeHolder.vp_mAdContainer);
                                     }
                                 }
 
@@ -189,16 +189,17 @@ public class VP_FolderAdapter extends RecyclerView.Adapter<VP_FolderAdapter.View
                             nativeBannerAd.loadAd(nativeBannerAd.buildLoadAdConfig()
                                     .withAdListener(nativeAdListener)
                                     .build());
-                        }else {
+                        } else {
+                            nativeHolder.vp_adText.setVisibility(View.GONE);
                             loadQurNative(vp_activity, nativeHolder.vp_mAdContainer);
                         }
                     }
                 }).build();
 
                 adLoader.loadAd(new AdRequest.Builder().build());
-            }else if (vp_gEnabled(vp_activity) && !vp_1FBEnable(vp_activity)){
-                if (vp_1FBEnable(vp_activity)){
-                    NativeBannerAd nativeBannerAd = new NativeBannerAd(vp_activity,vp_FBNativeBanner1(vp_activity));
+            } else if (vp_gEnabled(vp_activity) && !vp_1FBEnable(vp_activity)) {
+                if (vp_1FBEnable(vp_activity)) {
+                    NativeBannerAd nativeBannerAd = new NativeBannerAd(vp_activity, vp_FBNativeBanner1(vp_activity));
                     NativeAdListener nativeAdListener = new NativeAdListener() {
                         @Override
                         public void onMediaDownloaded(Ad ad) {
@@ -208,7 +209,7 @@ public class VP_FolderAdapter extends RecyclerView.Adapter<VP_FolderAdapter.View
                         public void onError(Ad ad, AdError adError) {
                             nativeHolder.vp_adText.setVisibility(View.GONE);
                             if (vp_isValidContext(vp_activity)) {
-                                loadQurNative(vp_activity,nativeHolder.vp_mAdContainer);
+                                loadQurNative(vp_activity, nativeHolder.vp_mAdContainer);
                             }
                         }
 
@@ -246,11 +247,12 @@ public class VP_FolderAdapter extends RecyclerView.Adapter<VP_FolderAdapter.View
                     nativeBannerAd.loadAd(nativeBannerAd.buildLoadAdConfig()
                             .withAdListener(nativeAdListener)
                             .build());
-                }else {
+                } else {
+                    nativeHolder.vp_adText.setVisibility(View.GONE);
                     loadQurNative(vp_activity, nativeHolder.vp_mAdContainer);
                 }
-            }else if (!vp_gEnabled(vp_activity) && vp_1FBEnable(vp_activity)){
-                NativeBannerAd nativeBannerAd = new NativeBannerAd(vp_activity,vp_FBNativeBanner1(vp_activity));
+            } else if (!vp_gEnabled(vp_activity) && vp_1FBEnable(vp_activity)) {
+                NativeBannerAd nativeBannerAd = new NativeBannerAd(vp_activity, vp_FBNativeBanner1(vp_activity));
                 NativeAdListener nativeAdListener = new NativeAdListener() {
                     @Override
                     public void onMediaDownloaded(Ad ad) {
@@ -260,7 +262,7 @@ public class VP_FolderAdapter extends RecyclerView.Adapter<VP_FolderAdapter.View
                     public void onError(Ad ad, AdError adError) {
                         nativeHolder.vp_adText.setVisibility(View.GONE);
                         if (vp_isValidContext(vp_activity)) {
-                            loadQurNative(vp_activity,nativeHolder.vp_mAdContainer);
+                            loadQurNative(vp_activity, nativeHolder.vp_mAdContainer);
                         }
                     }
 
@@ -298,7 +300,7 @@ public class VP_FolderAdapter extends RecyclerView.Adapter<VP_FolderAdapter.View
                 nativeBannerAd.loadAd(nativeBannerAd.buildLoadAdConfig()
                         .withAdListener(nativeAdListener)
                         .build());
-            }else {
+            } else {
                 nativeHolder.vp_adText.setVisibility(View.GONE);
                 loadQurNative(vp_activity, nativeHolder.vp_mAdContainer);
             }
