@@ -1,8 +1,0 @@
-1<?xml version="1.0" encoding="utf-8"?>
-2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.getkeepsafe.taptargetview" >
-4
-5    <uses-sdk android:minSdkVersion="21" />
-5-->G:\APP\2021_Projects\Apps\XVX_VideoPlayer\XVXVideoPlayer\XVXVideoPlayer\taptargetview\src\main\AndroidManifest.xml
-6
-7</manifest>
