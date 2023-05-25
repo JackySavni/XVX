@@ -371,25 +371,25 @@ public class VP_Home extends AppCompatActivity implements View.OnClickListener {
             vp_gameBtnLyt.setVisibility(View.GONE);
         }
 
-        if (vp_ShowTrendingAll(this).equals(vp_trueString())) {
-            if (!vp_ShowTrending(this)) {
-                setOneSignal();
-                vp_trendOptImg.setVisibility(View.GONE);
-            } else {
-                vp_trendOptImg.setVisibility(View.VISIBLE);
-                ShowTrendPointer();
-            }
-        } else if (vp_ShowTrendingAll(this).equals(vp_falseString())) {
-            setOneSignal();
-            vp_trendOptImg.setVisibility(View.GONE);
-        } else if (vp_ShowTrendingAll(this).equals(vp_allString())) {
-            setOneSignal();
+//        if (vp_ShowTrendingAll(this).equals(vp_trueString())) {
+//            if (!vp_ShowTrending(this)) {
+//                setOneSignal();
+//                vp_trendOptImg.setVisibility(View.GONE);
+//            } else {
+//                vp_trendOptImg.setVisibility(View.VISIBLE);
+//                ShowTrendPointer();
+//            }
+//        } else if (vp_ShowTrendingAll(this).equals(vp_falseString())) {
+//            setOneSignal();
+//            vp_trendOptImg.setVisibility(View.GONE);
+//        } else if (vp_ShowTrendingAll(this).equals(vp_allString())) {
+//            setOneSignal();
             vp_trendOptImg.setVisibility(View.VISIBLE);
             ShowTrendPointer();
-        } else {
-            setOneSignal();
-            vp_trendOptImg.setVisibility(View.GONE);
-        }
+//        } else {
+//            setOneSignal();
+//            vp_trendOptImg.setVisibility(View.GONE);
+//        }
     }
 
     private void ShowTrendPointer() {
