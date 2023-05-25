@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <Toolbar
+        android:id="@+id/vp_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:elevation="0dp"
+        android:fitsSystemWindows="true"
+        app:title="Photos"
+        app:titleTextColor="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/vp_btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/vp_galley_ripple_gray"
+            android:visibility="gone"
+            app:srcCompat="@drawable/vp_galley_ic_go_back" />
+
+        <TextView
+            android:id="@+id/vp_txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </Toolbar>
+
+</FrameLayout>

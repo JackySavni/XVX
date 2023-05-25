@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".trend.VP_TrendVidCats">
+
+    <include
+        layout="@layout/vp_activity_ex_trend_vid_cats_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adLayout" />
+
+    <RelativeLayout
+        android:id="@+id/adLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/nav_bar_color"
+        android:gravity="center"
+        android:minHeight="@dimen/_55sdp">
+
+        <TextView
+            android:id="@+id/adTextBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ad_attribution"
+            android:textColor="@color/light_white" />
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+    </RelativeLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/vp_spinkit_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@android:color/white"
+        app:SpinKit_Style="ThreeBounce" />
+</RelativeLayout>
